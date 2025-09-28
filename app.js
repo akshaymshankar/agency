@@ -622,6 +622,28 @@ const throttle = (func, limit) => {
         }
     }
 };
+// Add smooth scrolling for navigation links
+document.addEventListener('DOMContentLoaded', function() {
+    // Existing code stays the same...
+    
+    // Add smooth scrolling for navigation
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                const offsetTop = targetSection.getBoundingClientRect().top + window.pageYOffset - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
 
 // Throttled scroll handler for performance
 const handleScroll = throttle(() => {
