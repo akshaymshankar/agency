@@ -1585,6 +1585,37 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+/* Portfolio Section */
+.portfolio-section {
+    padding: 80px 32px;
+    background: #fff;
+    text-align: center;
+}
+
+.portfolio-section .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #111;
+}
+
+.portfolio-section .section-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 48px;
+}
+
+.video-stats {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
