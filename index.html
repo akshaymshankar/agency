@@ -10,22 +10,22 @@
 <body>
     <!-- Navigation Bar -->
     <header class="header">
-        <nav class="navbar">
-            <div class="nav-logo">
-                <div class="logo-triangles">
-                    <div class="triangle"></div>
-                    <div class="triangle"></div>
-                    <div class="triangle"></div>
-                </div>
-                <span class="logo-text">Metro Media House</span>
-            </div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#testimonials">Testimonials</a>
-            </div>
-            <button class="btn btn--orange">Book a Call</button>
-        </nav>
+      <nav class="navbar">
+    <div class="logo-triangles">
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+        <div class="triangle"></div>
+    </div>
+    <span class="logo-text">Metro Media House</span>
+    <div class="nav-links">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+    </div>
+    <button class="btn btn--orange">Book a Call</button>
+</nav>
+
     </header>
 
     <!-- Hero Section -->
@@ -230,7 +230,8 @@
     </section>
 
     <!-- 3-Step Process -->
-    <section class="process-section">
+    <section class="process-section" id="services">
+
         <div class="process-header">
             <h2 class="section-title">What's the <span class="text-muted underlined">secret</span> sauce?</h2>
             <p class="section-subtitle">Scale your profitable personal brand in 3 Steps</p>
@@ -320,7 +321,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section">
+    <section class="testimonials-section" id = "testimonials">
         <h2 class="section-title">Customer testimonials</h2>
         <p class="section-subtitle">See what our clients had to say about our work</p>
         <div class="testimonials-carousel">
@@ -372,9 +373,65 @@
             </div>
         </div>
     </section>
+    <section class="portfolio-section" id="portfolio">
+    <div class="container">
+        <h2 class="section-title">Our Work Portfolio</h2>
+        <p class="section-subtitle">See the viral content we've created for our clients</p>
+        <div class="video-showcase">
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=300&q=80" alt="Portfolio Video 1" />
+                    <div class="play-button-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <polygon points="8,6 20,12 8,18"></polygon>
+                        </svg>
+                    </div>
+                    <div class="video-stats">250K+ views</div>
+                </div>
+                <div class="video-info">
+                    <h3>Brand Strategy Success</h3>
+                    <p>How we helped a startup founder build authority in fintech</p>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=300&q=80" alt="Portfolio Video 2" />
+                    <div class="play-button-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <polygon points="8,6 20,12 8,18"></polygon>
+                        </svg>
+                    </div>
+                    <div class="video-stats">180K+ views</div>
+                </div>
+                <div class="video-info">
+                    <h3>Content Viral Campaign</h3>
+                    <p>Transforming expertise into engaging short-form content</p>
+                </div>
+            </div>
+            
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1553028826-f4804151e065?auto=format&fit=crop&w=300&q=80" alt="Portfolio Video 3" />
+                    <div class="play-button-overlay">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <polygon points="8,6 20,12 8,18"></polygon>
+                        </svg>
+                    </div>
+                    <div class="video-stats">320K+ views</div>
+                </div>
+                <div class="video-info">
+                    <h3>Personal Brand Growth</h3>
+                    <p>From 0 to 100K followers in 6 months</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq-section" id = "faq">
         <h2 class="section-title">Popular FAQs</h2>
         <p class="section-subtitle">Have question? We got answers. Here are the most frequently asked questions.</p>
         <div class="faq-container">
